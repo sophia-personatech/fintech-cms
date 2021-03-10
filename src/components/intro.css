@@ -1,0 +1,26 @@
+.intro {
+  position: relative;
+  height: 340px;
+  background-size: auto 100%;
+  background-position: center;
+  border-bottom: 1px solid #2d5e0d;
+  background-image: url("../img/introBG.png");
+}
+.intro > img {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 4;
+  bottom: -54px;
+  margin: 0px auto;
+  max-width: 640px;
+}
+@media only screen and (max-width: 767px) {
+  .intro {
+    height: 220px;
+  }
+  .intro > img {
+    bottom: -28px;
+    max-width: 320px;
+  }
+}

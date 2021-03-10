@@ -1,0 +1,143 @@
+.footer {
+  position: relative;
+  padding: 12px 0px;
+  background-color: #114419;
+}
+.footContainer {
+  position: relative;
+  font-size: 0px;
+}
+.footContainer > .footLogo,
+.footContainer > .footLinks {
+  position: relative;
+  width: 320px;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.footContainer > .footLogo > a {
+  color: #fff;
+  display: block;
+  /* font-size: 72px; */
+  width: 250px;
+}
+.footContainer > .footLinks {
+  text-align: right;
+  width: calc(100% - 320px);
+  width: -moz-calc(100% - 320px);
+  width: -webkit-calc(100% - 320px);
+}
+.footContainer > .footLinks > ul > li + li {
+  margin-top: 6px;
+}
+.footContainer > .footLinks > ul > li > a {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+}
+.footContactDetails {
+  position: relative;
+  margin-top: 14px;
+  text-align: center;
+}
+.footContactDetails > ul {
+  margin: 0px -12px;
+}
+.footContactDetails > ul > li {
+  position: relative;
+  color: #fff;
+  padding: 0px 12px;
+}
+.footContactDetails > ul > li + li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.footContactDetails > ul > li:last-child::before {
+  content: none;
+}
+.footContactDetails > ul > li > a:hover,
+.footContainer > .footLinks > ul > li > a:hover {
+  text-decoration: underline;
+}
+.footContactDetails > ul > li a {
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .footContainer > .footLogo,
+  .footContainer > .footLinks {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .footContainer > .footLogo > a {
+    /* font-size: 48px; */
+    margin: 0 auto;
+  }
+  .footContainer > .footLinks > ul > li > a {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .footContainer > .footLinks {
+    margin-top: 12px;
+  }
+  .footContactDetails {
+    margin-top: 24px;
+  }
+  .footContactDetails > ul {
+    margin: 0px auto;
+  }
+  .footContactDetails > ul > li {
+    padding: 0px;
+    display: block;
+  }
+  .footContactDetails > ul > li + li {
+    margin-top: 6px;
+  }
+  .footContactDetails > ul > li + li::before {
+    content: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .footContainer > .footLogo {
+    width: 220px;
+  }
+  .footContainer > .footLogo > a {
+    font-size: 60px;
+  }
+  .footContainer > .footLinks {
+    width: calc(100% - 220px);
+    width: -moz-calc(100% - 220px);
+    width: -webkit-calc(100% - 220px);
+  }
+  .footContainer > .footLinks > ul > li > a {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 790px) and (max-width: 990px) {
+  .footContainer > .footLogo {
+    width: 220px;
+  }
+  .footContainer > .footLogo > a {
+    /* font-size: 60px; */
+    margin: 0 auto;
+  }
+  .footContainer > .footLinks {
+    width: calc(100% - 220px);
+    width: -moz-calc(100% - 220px);
+    width: -webkit-calc(100% - 220px);
+  }
+  .footContainer > .footLinks > ul > li > a {
+    font-size: 15px;
+  }
+}
